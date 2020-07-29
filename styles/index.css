@@ -3,29 +3,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
     text-decoration: none;
 }
 
+.content{
+    padding: 30px;
+}
+
 /* cabeçalho preto*/
 header{
-    
-    padding-top: 2.5%;
+    /*mexi aqui ó*/
+    padding-top: 30px;
     height: 20vh;
     background-color: #140f0a;
-    
-
 }
 
-
-html{
-
-    font-family: 'Roboto', sans-serif;
-
-}
-.content h1{
+.header-container h1{
     font-family: 'Ubuntu', sans-serif;
     align-items: center;
     justify-content: center;
@@ -34,19 +31,15 @@ html{
 }
 
 body{
-
     background-color: #EEEEEE;
-
 }
 
-.content{
-    
+.header-container{ 
     margin: auto;
     width: 40%;
 }
 
 #searchfield{
-
     padding-left: 20px;
     color: #757575;
     font-family: 'Ubuntu', sans-serif;
@@ -57,12 +50,10 @@ body{
     background-color: #EEEEEE;
     border: none;
     outline: none;
-    position: relative;
-    
+    position: relative; 
 }
 
 #search-button{
-
     width: 10%;
     height: 40px;
     display: flex;
@@ -72,74 +63,62 @@ body{
     background-color: #CBCBCB;
     background-position: center;
     float: right;
-    
-   
 }
 
-#box{
-
+#search-box{
     margin-top: 10px;
-
 }
 
 #search-button:hover{
-
     background-color: #A3A3A3;
-
 }
 
 #searchfield::placeholder{
     font-style: italic;
     font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
-    
 }
 
 .topnav{
-    
-    background-color: #C4FB6D;
+    background-color: #76EAD7;
     height: 30px;
-    
     /* ctrl + s isaac */
 }
 
 .topnav a{
-    
     font-size: 20px;
     color: #473624;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     padding: auto;
-    
-
 }
 
 .topnav ul{
-    
-    
     height: 30px;
     width: 40%;
     margin: auto;
     list-style: none;
     text-align: center;
-
 }
 
 .topnav li{
-    
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 2px 20px;
+    padding: 0px 20px;
     display: inline;
-
 }
+
 .topnav li:hover{
-
     color: wheat;
-    background-color: #a4d359;
-    padding: 6px 20px;
+    background-color: #60D0C0;
+    padding: 9px 20px;
+    position: relative;
+    top: -5px;
+}
 
+.carousel-item{
+    height: 400px;
 }
 /*body::after {
 
