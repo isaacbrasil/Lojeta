@@ -1,37 +1,21 @@
 *{
-    font-size: 6.25%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: #EEEEEE;
+}
+
 a{
     text-decoration: none;
 }
 
-.content{
-    padding: 30px;
-}
-
-/* cabeçalho preto*/
 header{
-    /*mexi aqui ó*/
-    padding-top: 30px;
-    height: 20vh;
+    padding: 10px 20px;
     background-color: #140f0a;
-}
-
-.header-container h1{
-    font-family: 'Ubuntu', sans-serif;
-    align-items: center;
-    justify-content: center;
-    font-size: 36rem;
-    color: #76EAD7;
-}
-
-body{
-    background-color: #EEEEEE;
 }
 
 .header-container{ 
@@ -39,11 +23,17 @@ body{
     width: 40%;
 }
 
+.header-container h1{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: #76EAD7;
+}
+
 #searchfield{
     padding-left: 20px;
     color: #757575;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 10rem;
     height: 40px;
     width: 90%;
     border-radius: 30px 0 0 30px;
@@ -79,42 +69,44 @@ body{
     font-size: 10px;
 }
 
+.content{
+    padding: 30px;
+}
+
 .topnav{
     background-color: #76EAD7;
     height: 30px;
     /* ctrl + s isaac */
 }
 
-.topnav a{
-    font-size: 20px;
-    color: #473624;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    padding: auto;
-}
-
 .topnav ul{
     height: 30px;
-    width: 40%;
     margin: auto;
     list-style: none;
     text-align: center;
 }
 
 .topnav li{
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 0px 20px;
-    display: inline;
+    display: inline-block;
+    transition: background 0.2s, border-radius 0.2s;/*coloquei uns frufru*/
+}
+.topnav li:hover{
+    background: #60D0C0;
+    border-radius: 4px;
+}
+.topnav li:active{
+    background: #50C0B0;
+    border-radius: 8px;
 }
 
-.topnav li:hover{
-    color: wheat;
-    background-color: #60D0C0;
-    padding: 9px 20px;
-    position: relative;
-    top: -5px;
+.topnav a{
+    display: flex;/*isso daqui concertou o bagui, manipular os a's e nao os li's*/
+    font-size: 20px;
+    padding: 0px 20px;
+    align-items: center;/* isso daq ajeita os links no meio do nav*/
+    color: #473624;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .carousel-item{
