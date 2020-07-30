@@ -1,27 +1,25 @@
 @media(max-width: 1164px){
 
-    .topnav {
-        display: none;
-    }
+    
 
 }
 /* Altera o titulo H1*/
 @media(max-width: 1024px){
-
-        .content h1{
-            margin-top: 5%;
-            font-size: 24rem;
-        }
-        
+	
+    .topnav {
+        display: none;/*olhei as referencias, e os menus somem com 1024px, tirei essas margins desnecessarias, fontes enormes kkk e ajustei o width pra o header nunca mudar de tamanho verticalmente*/
+    }
+    .header-container{ 
+        width: 60%;
+    }
 }
 
 @media(max-width: 768px){
 
-    .content{
-        width: 60%;
-        margin-top: 5%;
+    
+    .header-container{ 
+        width: 100%;
     }
-
 
 }
 /*Altera a margem para centralizar o content*/
@@ -29,9 +27,8 @@
 
 @media(max-width: 415px){
 
-    header{
-    
-        height: 25vh;
-    
+    .header-container{ 
+        width: 100%;
     }
+
 }
