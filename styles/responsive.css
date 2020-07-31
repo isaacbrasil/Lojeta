@@ -1,34 +1,23 @@
-@media(max-width: 1164px){
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .header-container{ 
+        width: 100%;
+    }
+}
 
-    
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
 
 }
-/* Altera o titulo H1*/
-@media(max-width: 1024px){
-	
-    .topnav {
-        display: none;/*olhei as referencias, e os menus somem com 1024px, tirei essas margins desnecessarias, fontes enormes kkk e ajustei o width pra o header nunca mudar de tamanho verticalmente*/
-    }
+/*
+Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
     .header-container{ 
         width: 60%;
     }
 }
 
-@media(max-width: 768px){
-
-    
-    .header-container{ 
-        width: 100%;
-    }
-
-}
-/*Altera a margem para centralizar o content*/
-
-
-@media(max-width: 415px){
-
-    .header-container{ 
-        width: 100%;
-    }
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
 
 }
