@@ -1,0 +1,37 @@
+@media(max-width: 1164px){
+
+    .topnav {
+        display: none;
+    }
+
+}
+/* Altera o titulo H1*/
+@media(max-width: 1024px){
+
+        .content h1{
+            margin-top: 5%;
+            font-size: 24rem;
+        }
+        
+}
+
+@media(max-width: 768px){
+
+    .content{
+        width: 60%;
+        margin-top: 5%;
+    }
+
+
+}
+/*Altera a margem para centralizar o content*/
+
+
+@media(max-width: 415px){
+
+    header{
+    
+        height: 25vh;
+    
+    }
+}
