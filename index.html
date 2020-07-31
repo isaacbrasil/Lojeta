@@ -20,28 +20,25 @@
     <body>
 
         <header>
-            <div class="header-container">
-              
+            <div class="header-container">  
                 <h1>Olá, seja Bem-Vindo!</h1>
-
-                
                 <div id="search-box">
-
                     <input type="name" id="searchfield" placeholder="O que você procura hoje?">
                     <a href="#" id="search-button"></a>
-
                 </div>
-                
+                <button>
+                    
+                </button>
             </div>
         </header>
-        <div class="topnav">
+        <nav class="navbar sticky-top topnav">
             <ul>
-                <li><a href="#home">Camisetas</a></li>
-                <li><a href="#blusao">Blusão</a></li>
-                <li><a href="#canecas">Canecas</a></li>
-                <li><a href="#about">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home">Camisetas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blusao">Blusão</a></li>
+                <li class="nav-item"><a class="nav-link" href="#canecas">Canecas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
             </ul>
-        </div>
+        </nav>
         
         <div class="content">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2500">
@@ -71,18 +68,19 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
-        </div>
-
-        <div class="card">
-            <div class="card-image"></div>
-            <div class="card-text">
-                <span class="date">Camiseta Ranger Preto</span>
-                <h2> R$ 79,90 </h2>
+        
+            <div class="card">
+                <div class="card-image"></div>
+                    <div class="card-text">
+                        <span class="date">Camiseta Ranger Preto</span>
+                        <h2> R$ 79,90 </h2>
+                    </div>
+                <div class="card-stats"></div>
             </div>
-            <div class="card-stats"></div>
 
         </div>
+
+        
         
         <script src="jquery/jquery-3.5.1.min.js"></script>
         <script src="https://unpkg.com/@popperjs/core@2"></script>

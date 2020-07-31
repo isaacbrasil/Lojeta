@@ -7,6 +7,7 @@
 
 body{
     background-color: #EEEEEE;
+    height: 2000px;
 }
 
 a{
@@ -27,6 +28,7 @@ header{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     justify-content: center;
+    white-space: nowrap;
     color: #76EAD7;
 }
 
@@ -75,12 +77,10 @@ header{
 
 .topnav{
     background-color: #76EAD7;
-    height: 30px;
-    /* ctrl + s isaac */
+    padding: 0px;
 }
 
 .topnav ul{
-    height: 30px;
     margin: auto;
     list-style: none;
     text-align: center;
@@ -102,10 +102,9 @@ header{
 .topnav a{
     display: flex;/*isso daqui concertou o bagui, manipular os a's e nao os li's*/
     font-size: 20px;
-    padding: 0px 20px;
+    padding: 5px 20px;
     align-items: center;/* isso daq ajeita os links no meio do nav*/
     color: #473624;
-    text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
 }
 
