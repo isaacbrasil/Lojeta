@@ -71,18 +71,20 @@ header{
     font-size: 10px;
 }
 
-.content{
-    position: absolute;
+.login-container{
+    max-width: 400px;
 }
 
 .content-login{
-    padding: 50px 20%;
+    position: relative;
+    top: 20vh;
     opacity: 100%;
     z-index: 1;
 }
 
 .content-signup{
-    padding: 50px 10%;
+    position: relative;
+    top: -183px;
     opacity: 0%;
     z-index: -1;
 }

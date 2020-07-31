@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8"/>
@@ -40,136 +40,145 @@
             </ul>
         </nav>
         
-        <div id="loginContent" class="content content-login container">
-            <form>
-                <div class="form-group">
-                    <label>E-mail</label>
-                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">Nós não iremos vender seus dados pra china!.</small>
-                </div>
-                <div class="form-group">
-                    <label>Senha</label>
-                    <input type="password" class="form-control" id="InputPassword1">
-                </div>
-                <button id="loginSubmit" type="submit" class="btn btn-primary">Entrar</button>
-                <button id="signUpFor" type="button" class="btn btn-secondary">Cadastrar</button>
-            </form>
+        <div class="login-container container">
+            <div id="loginContent" class="content-login container-sm">
+                <form>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Nós não iremos vender seus dados pra china!.</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" class="form-control" id="InputPassword1">
+                    </div>
+                    <button id="loginSubmit" type="submit" class="btn btn-primary">Entrar</button>
+                    <button id="signUpFor" type="button" class="btn btn-secondary">Cadastrar</button>
+                </form>
+            </div>
         </div>
-
-        <div id="signUpContent" class="content content-signup container">
-            <form>
-
-                <h3>Dados</h3>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nome">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Sobrenome">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col">
-                            <label>E-mail</label>
-                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="col">
-                            <label>Senha</label>
-                            <input type="password" class="form-control" id="InputPassword1">
+        <div class="signup-container container">
+            <div id="signUpContent" class="content-signup container-lg">
+                <form>
+                    <h3>Dados</h3>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Sobrenome">
+                            </div>
                         </div>
                     </div>
-                    <label>Confirme a senha</label>
-                    <input type="password" class="form-control" id="InputPassword1">
-                    <label>Telefone</label>
-                    <input type="password" class="form-control" id="InputPhone" placeholder="(xx)xxxxx-xxxx">
-                </div>
-
-                <h3>Endereço</h3>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col">
-                            <label>Rua</label>
-                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="col">
-                            <label>Setor</label>
-                            <input type="password" class="form-control" id="InputPassword1">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <label>E-mail</label>
+                                <input type="email" class="form-control" id="InputEmailSign" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col">
+                                <label>Senha</label>
+                                <input type="password" class="form-control" id="InputPasswordSign">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col">
-                            <label>Numero</label>
-                            <input type="tel" class="form-control" id="InputNumber">
-                        </div>
-                        <div class="col">
-                            <label>Quadra</label>
-                            <input type="number" class="form-control" id="InputQd">
-                        </div>
-                        <div class="col">
-                            <label>Lote</label>
-                            <input type="number" class="form-control" id="InputLt">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Telefone</label>
+                                <input type="tel" class="form-control" id="InputPhone" placeholder="(xx)xxxxx-xxxx">
+                            </div>
+                            <div class="col">
+                                <label>Confirme a senha</label>
+                                <input type="password" class="form-control" id="InputPasswordConfirm">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col">
-                            <label>Estado</label>
-                            <select id="inputState" class="form-control">
-                                <option selected></option>
-                                <option selected></option>
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <label>Cidade</label>
-                            <select id="inputCity" class="form-control" disabled>
-                                
-                            </select>
-                        </div>
-                        <div class="col">
-                            <label>CEP</label>
-                            <input type="tel" class="form-control" id="InputCEP">
-                            
+                    <h3>Endereço</h3>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Rua</label>
+                                <input type="text" class="form-control" id="inputStreet">
+                            </div>
+                            <div class="col">
+                                <label>Setor</label>
+                                <input type="text" class="form-control" id="inputSector">
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Numero</label>
+                                <input type="tel" class="form-control" id="InputNumber">
+                            </div>
+                            <div class="col">
+                                <label>Quadra</label>
+                                <input type="number" class="form-control" id="InputQd">
+                            </div>
+                            <div class="col">
+                                <label>Lote</label>
+                                <input type="number" class="form-control" id="InputLt">
+                            </div>
+                        </div>
+                    </div>
 
-                <button id="signUpSubmit" type="submit" class="btn btn-primary">Cadastrar</button>
-                <button id="signUpBack" type="button" class="btn btn-secondary">Voltar</button>
-            </form>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Estado</label>
+                                <select id="inputState" class="form-control" onchange="setCitiesSelect()">
+                                    <option value="null" selected>Selecione um Estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label>Cidade</label>
+                                <select id="inputCity" class="form-control" disabled>
+                                    <option selected>Selecione um Estado</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label>CEP</label>
+                                <input type="tel" class="form-control" id="InputCEP" placeholder="Ex.:00000-000">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="signUpSubmit" type="submit" class="btn btn-primary" disabled>Cadastrar</button>
+                    <button id="signUpBack" type="button" class="btn btn-secondary">Voltar</button>
+                </form>
+            </div>
         </div>
         
         
@@ -178,9 +187,11 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
         <script src="jquery/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="javascript/animations.js"></script>
+        <script type="text/javascript" src="javascript/functions.js"></script>
         <script type="text/javascript" src="javascript/app.js"></script>
 
     </body>
