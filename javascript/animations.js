@@ -19,6 +19,7 @@ $("#signUpBack").click(function(){
   	$("#loginContent").css("z-index", "1");
 });
 function animateAlert(element, type){
+  element = $(element);
   if(type == "pop"){
     element.animate({
         height: '20px'
