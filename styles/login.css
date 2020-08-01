@@ -104,10 +104,12 @@ header{
     display: inline-block;
     transition: background 0.2s, border-radius 0.2s;/*coloquei uns frufru*/
 }
+
 .topnav li:hover{
     background: #60D0C0;
     border-radius: 4px;
 }
+
 .topnav li:active{
     background: #50C0B0;
     border-radius: 8px;
@@ -120,4 +122,14 @@ header{
     align-items: center;/* isso daq ajeita os links no meio do nav*/
     color: #473624;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.alertContainer{
+    height: 0px;
+    overflow: hidden;
+}
+
+.alertMsg{
+    color: red;
+    opacity: 70%;
 }

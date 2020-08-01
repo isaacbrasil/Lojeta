@@ -60,14 +60,23 @@
         <div class="signup-container container">
             <div id="signUpContent" class="content-signup container-lg">
                 <form>
+<!--                User guide:
+                    0>Nome
+                    1>Sobrenome
+                    2>Email
+                    3>
+                    4> -->
                     <h3>Dados</h3>
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Nome">
+                                <input id="inputSignName" type="text" class="form-control" placeholder="Nome" oninput="userInputTreatment(0)" onblur="userInputTreatment(0)">
+                                <div class="alertContainer" id="nameAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
+                                <div class="alertContainer" id="nameAlert1"><small class="alertMsg">Nome inválido</small></div>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Sobrenome">
+                                <input id="inputSignSur" type="text" class="form-control" placeholder="Sobrenome" oninput="userInputTreatment(1)" onblur="userInputTreatment(1)">
+                                <div class="alertContainer" id="surAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                             </div>
                         </div>
                     </div>
@@ -75,11 +84,17 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>E-mail</label>
-                                <input type="email" class="form-control" id="InputEmailSign" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="inputEmailSign" aria-describedby="emailHelp" oninput="userInputTreatment(2)" onblur="userInputTreatment(2)">
+                                <div class="alertContainer" id="emailAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
+                                <div class="alertContainer" id="emailAlert1"><small class="alertMsg">Email inválido</small></div>
+                                <div class="alertContainer" id="emailAlert2"><small class="alertMsg">Email já utilizado</small></div>
                             </div>
                             <div class="col">
                                 <label>Senha</label>
-                                <input type="password" class="form-control" id="InputPasswordSign">
+                                <input type="password" class="form-control" id="inputPasswordSign">
+                                <div class="alertContainer" id="passAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
+                                <div class="alertContainer" id="passAlert1"><small class="alertMsg">Senha muito curta</small></div>
+                                <div class="alertContainer" id="passAlert0"><small class="alertMsg">Senha inválida</small></div>
                             </div>
                         </div>
                     </div>
@@ -87,11 +102,15 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>Telefone</label>
-                                <input type="tel" class="form-control" id="InputPhone" placeholder="(xx)xxxxx-xxxx">
+                                <input type="tel" class="form-control" id="inputPhone" placeholder="(xx)xxxxx-xxxx">
+                                <div class="alertContainer" id="telAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
+                                <div class="alertContainer" id="telAlert0"><small class="alertMsg">Telefone inválido</small></div>
                             </div>
                             <div class="col">
                                 <label>Confirme a senha</label>
-                                <input type="password" class="form-control" id="InputPasswordConfirm">
+                                <input type="password" class="form-control" id="inputPasswordConfirm">
+                                <div class="alertContainer" id="passConfirmAlert0"><small class="alertMsg">Por favor confirme sua senha</small></div>
+                                <div class="alertContainer" id="passConfirmAlert1"><small class="alertMsg">As senhas não batem</small></div>
                             </div>
                         </div>
                     </div>
@@ -102,10 +121,12 @@
                             <div class="col">
                                 <label>Rua</label>
                                 <input type="text" class="form-control" id="inputStreet">
+                                <div class="alertContainer" id="streetAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                             </div>
                             <div class="col">
                                 <label>Setor</label>
                                 <input type="text" class="form-control" id="inputSector">
+                                <div class="alertContainer" id="sectorAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                             </div>
                         </div>
                     </div>
@@ -113,17 +134,22 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>Numero</label>
-                                <input type="tel" class="form-control" id="InputNumber">
+                                <input type="tel" class="form-control" id="inputNumber">
+                                <div class="alertContainer" id="nbrAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                             </div>
                             <div class="col">
                                 <label>Quadra</label>
-                                <input type="number" class="form-control" id="InputQd">
+                                <input type="number" class="form-control" id="inputQd" placeholder="(opcional)">
                             </div>
                             <div class="col">
                                 <label>Lote</label>
-                                <input type="number" class="form-control" id="InputLt">
+                                <input type="number" class="form-control" id="inputLt" placeholder="(opcional)">
                             </div>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Complemento</label>
+                        <input type="text" class="form-control" id="inputComplement" placeholder="(opcional)">
                     </div>
 
                     <div class="form-group">
@@ -170,7 +196,7 @@
                             <div class="col">
                                 <label>CEP</label>
                                 <input type="tel" class="form-control" id="InputCEP" placeholder="Ex.:00000-000">
-
+                                <div class="alertContainer" id="cepAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                             </div>
                         </div>
                     </div>

@@ -27,3 +27,51 @@ function setCitiesSelect() {
         input.attr("disabled", "true");
     }
 }
+
+function userInputIsEmpty(str){
+    if(str.length == 0){
+        return true;
+    }
+    return false;
+}
+
+function userInputTreatment(type){
+    // tratar o nome
+    if(type == 0){
+        name = $("#inputSignName").val();
+        console.log(name.length);
+        if(userInputIsEmpty(name)){
+            $("#nameAlert0").animate({
+                height: '20px'
+            })
+        }else{
+            $("#nameAlert0").animate({
+                height: '0px'
+            })
+        }
+    }else if(type == 1){
+        sur = $("#inputSignSur").val();
+        console.log(sur.length);
+        if(userInputIsEmpty(sur)){
+            $("#surAlert0").animate({
+                height: '20px'
+            })
+        }else{
+            $("#surAlert0").animate({
+                height: '0px'
+            })
+        }
+    }else if(type == 2){
+        email = $("#inputSignSur").val();
+        console.log(email.length);
+        if(userInputIsEmpty(email)){
+            $("#emailAlert0").animate({
+                height: '20px'
+            })
+        }else{
+            $("#emailAlert0").animate({
+                height: '0px'
+            })
+        }
+    }
+}
