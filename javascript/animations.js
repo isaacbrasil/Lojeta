@@ -18,3 +18,14 @@ $("#signUpBack").click(function(){
   	$("#signUpContent").css("z-index", "-1");
   	$("#loginContent").css("z-index", "1");
 });
+function animateAlert(element, type){
+  if(type == "pop"){
+    element.animate({
+        height: '20px'
+    });
+  }else if(type == "hide"){
+      element.animate({
+        height: '0px'
+      });
+    }
+}

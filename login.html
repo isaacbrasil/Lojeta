@@ -60,22 +60,16 @@
         <div class="signup-container container">
             <div id="signUpContent" class="content-signup container-lg">
                 <form>
-<!--                User guide:
-                    0>Nome
-                    1>Sobrenome
-                    2>Email
-                    3>
-                    4> -->
                     <h3>Dados</h3>
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <input id="inputSignName" type="text" class="form-control" placeholder="Nome" oninput="userInputTreatment(0)" onblur="userInputTreatment(0)">
+                                <input id="inputSignName" type="text" class="form-control" placeholder="Nome">
                                 <div class="alertContainer" id="nameAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                                 <div class="alertContainer" id="nameAlert1"><small class="alertMsg">Nome inválido</small></div>
                             </div>
                             <div class="col">
-                                <input id="inputSignSur" type="text" class="form-control" placeholder="Sobrenome" oninput="userInputTreatment(1)" onblur="userInputTreatment(1)">
+                                <input id="inputSignSur" type="text" class="form-control" placeholder="Sobrenome">
                                 <div class="alertContainer" id="surAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                             </div>
                         </div>
@@ -84,17 +78,16 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>E-mail</label>
-                                <input type="email" class="form-control" id="inputEmailSign" aria-describedby="emailHelp" oninput="userInputTreatment(2)" onblur="userInputTreatment(2)">
+                                <input type="email" class="form-control" id="inputEmailSign" aria-describedby="emailHelp">
                                 <div class="alertContainer" id="emailAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                                 <div class="alertContainer" id="emailAlert1"><small class="alertMsg">Email inválido</small></div>
                                 <div class="alertContainer" id="emailAlert2"><small class="alertMsg">Email já utilizado</small></div>
                             </div>
                             <div class="col">
                                 <label>Senha</label>
-                                <input type="password" class="form-control" id="inputPasswordSign">
+                                <input type="password" class="form-control" id="inputPasswordSign" placeholder="(min. de 6 caracteres) ">
                                 <div class="alertContainer" id="passAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                                 <div class="alertContainer" id="passAlert1"><small class="alertMsg">Senha muito curta</small></div>
-                                <div class="alertContainer" id="passAlert0"><small class="alertMsg">Senha inválida</small></div>
                             </div>
                         </div>
                     </div>
@@ -102,9 +95,9 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>Telefone</label>
-                                <input type="tel" class="form-control" id="inputPhone" placeholder="(xx)xxxxx-xxxx">
-                                <div class="alertContainer" id="telAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
-                                <div class="alertContainer" id="telAlert0"><small class="alertMsg">Telefone inválido</small></div>
+                                <input type="tel" class="form-control" id="inputPhone" placeholder="(xx)xxxxx-xxxx" maxlength="11">
+                                <div class="alertContainer" id="phoneAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
+                                <div class="alertContainer" id="phoneAlert1"><small class="alertMsg">Telefone inválido</small></div>
                             </div>
                             <div class="col">
                                 <label>Confirme a senha</label>
@@ -156,7 +149,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>Estado</label>
-                                <select id="inputState" class="form-control" onchange="setCitiesSelect()">
+                                <select id="inputState" class="form-control">
                                     <option value="null" selected>Selecione um Estado</option>
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
@@ -186,12 +179,14 @@
                                     <option value="SE">Sergipe</option>
                                     <option value="TO">Tocantins</option>
                                 </select>
+                                <div class="alertContainer" id="stateAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                             </div>
                             <div class="col">
                                 <label>Cidade</label>
                                 <select id="inputCity" class="form-control" disabled>
                                     <option selected>Selecione um Estado</option>
                                 </select>
+                                <div class="alertContainer" id="cityAlert0"><small class="alertMsg">Este campo é obrigatório</small></div>
                             </div>
                             <div class="col">
                                 <label>CEP</label>
