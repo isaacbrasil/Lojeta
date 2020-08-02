@@ -64,13 +64,13 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <input id="inputSignName" type="text" class="form-control form-sign-required" placeholder="Nome">
+                                <input id="inputSignName" type="text" class="form-control form-sign-required" placeholder="Nome" maxlength="50" required>
                                 <div class="alertContainer alertMsgContainer-0" id="nameAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
                             </div>
                             <div class="col">
-                                <input id="inputSignSur" type="text" class="form-control form-sign-required" placeholder="Sobrenome">
+                                <input id="inputSignSur" type="text" class="form-control form-sign-required" placeholder="Sobrenome" maxlength="50" required>
                                 <div class="alertContainer alertMsgContainer-0" id="surAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
@@ -81,7 +81,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>E-mail</label>
-                                <input type="email" class="form-control form-sign-required" id="inputEmailSign" aria-describedby="emailHelp">
+                                <input type="email" class="form-control form-sign-required" id="inputEmailSign" aria-describedby="emailHelp" maxlength="100" required>
                                 <div class="alertContainer alertMsgContainer-0" id="emailAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
@@ -94,7 +94,7 @@
                             </div>
                             <div class="col">
                                 <label>Senha</label>
-                                <input type="password" class="form-control form-sign-required" id="inputPasswordSign" placeholder="(min. de 6 caracteres) ">
+                                <input type="password" class="form-control form-sign-required" id="inputPasswordSign" placeholder="(min. de 6 caracteres) " maxlength="50" required>
                                 <div class="alertContainer alertMsgContainer-0" id="passAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
@@ -108,7 +108,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>Telefone</label>
-                                <input type="tel" class="form-control form-sign-required" id="inputPhone" placeholder="(xx)xxxxx-xxxx" maxlength="15">
+                                <input type="tel" class="form-control form-sign-required" id="inputPhone" placeholder="(xx)xxxxx-xxxx" maxlength="15" maxlength="50" required>
                                 <div class="alertContainer alertMsgContainer-0" id="phoneAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="col">
                                 <label>Confirme a senha</label>
-                                <input type="password" class="form-control form-sign-required" id="inputPasswordConfirm">
+                                <input type="password" class="form-control form-sign-required" id="inputPasswordConfirm" maxlength="50" required>
                                 <div class="alertContainer alertMsgContainer-0" id="passConfirmAlert0">
                                     <small class="alertMsg alertMsg-0">Por favor confirme sua senha</small>
                                 </div>
@@ -134,15 +134,15 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>Rua</label>
-                                <input type="text" class="form-control form-sign-required" id="inputStreet">
+                                <input type="text" class="form-control form-sign-required" id="inputStreet" maxlength="100" required>
                                 <div class="alertContainer alertMsgContainer-0" id="streetAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
                             </div>
                             <div class="col">
                                 <label>Setor</label>
-                                <input type="text" class="form-control form-sign-required" id="inputSector">
-                                <div class="alertContainer alertMsgContainer-0" id="sectorAlert0">
+                                <input type="text" class="form-control form-sign-required" id="inputDistrict" maxlength="100" required>
+                                <div class="alertContainer alertMsgContainer-0" id="districtAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>Numero</label>
-                                <input type="tel" class="form-control form-sign-required" id="inputNumber">
+                                <input type="tel" class="form-control form-sign-required" id="inputNumber" maxlength="20" required>
                                 <div class="alertContainer alertMsgContainer-0" id="nbrAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
@@ -176,7 +176,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <label>Estado</label>
-                                <select id="inputState" class="form-control form-sign-required">
+                                <select id="inputState" class="form-control form-sign-required" required>
                                     <option value="null" selected>Selecione um Estado</option>
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
@@ -212,7 +212,7 @@
                             </div>
                             <div class="col">
                                 <label>Cidade</label>
-                                <select id="inputCity" class="form-control form-sign-required" disabled>
+                                <select id="inputCity" class="form-control form-sign-required" disabled required>
                                     <option selected>Selecione um Estado</option>
                                 </select>
                                 <div class="alertContainer alertMsgContainer-0" id="cityAlert0">
@@ -221,7 +221,7 @@
                             </div>
                             <div class="col">
                                 <label>CEP</label>
-                                <input type="tel" class="form-control form-sign-required" id="InputCEP" placeholder="Ex.:00000-000" maxlength="9">
+                                <input type="tel" class="form-control form-sign-required" id="InputCEP" placeholder="Ex.:00000-000" maxlength="9" required>
                                 <div class="alertContainer alertMsgContainer-0" id="cepAlert0">
                                     <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
                                 </div>
@@ -232,7 +232,7 @@
                         </div>
                     </div>
 
-                    <button id="signUpSubmit" type="submit" class="btn btn-primary" disabled>Cadastrar</button>
+                    <button id="signUpSubmit" type="button" class="btn btn-primary" disabled>Cadastrar</button>
                     <button id="signUpBack" type="button" class="btn btn-secondary">Voltar</button>
                 </form>
             </div>
@@ -248,6 +248,7 @@
         
         <script src="jquery/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="javascript/animations.js"></script>
+        <script type="text/javascript" src="javascript/Classes.js"></script>
         <script type="text/javascript" src="javascript/functions.js"></script>
         <script type="text/javascript" src="javascript/app.js"></script>
 
