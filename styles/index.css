@@ -1,30 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-color: #EEEEEE;
     height: 2000px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+header {
     padding: 10px 20px;
     background-color: #140f0a;
 }
 
-.header-container{ 
+.header-container {
     margin: auto;
     width: 40%;
 }
 
-.header-container h1{
+.header-container h1 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     justify-content: center;
@@ -32,7 +32,7 @@ header{
     color: #76EAD7;
 }
 
-#searchfield{
+#searchfield {
     padding-left: 20px;
     color: #757575;
     font-family: 'Ubuntu', sans-serif;
@@ -42,10 +42,10 @@ header{
     background-color: #EEEEEE;
     border: none;
     outline: none;
-    position: relative; 
+    position: relative;
 }
 
-#search-button{
+#search-button {
     width: 10%;
     height: 40px;
     display: flex;
@@ -57,50 +57,55 @@ header{
     float: right;
 }
 
-#search-box{
+#search-box {
     margin-top: 10px;
 }
 
-#search-button:hover{
+#search-button:hover {
     background-color: #A3A3A3;
 }
 
-#searchfield::placeholder{
+#searchfield::placeholder {
     font-style: italic;
     font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
 }
 
-.content{
+.content {
     padding: 30px;
 }
 
-.topnav{
+.topnav {
     background-color: #76EAD7;
     padding: 0px;
 }
 
-.topnav ul{
+
+.topnav ul {
     margin: auto;
     list-style: none;
     text-align: center;
 }
 
-.topnav li{
+.topnav li {
     display: inline-block;
-    transition: background 0.2s, border-radius 0.2s;/*coloquei uns frufru*/
+    transition: background 0.2s, border-radius 0.2s;
+    /*coloquei uns frufru*/
 }
-.topnav li:hover{
+
+.topnav li:hover {
     background: #60D0C0;
     border-radius: 4px;
 }
-.topnav li:active{
+
+.topnav li:active {
     background: #50C0B0;
     border-radius: 8px;
 }
 
-.topnav a{
-    display: flex;/*isso daqui concertou o bagui, manipular os a's e nao os li's*/
+.topnav a {
+    display: flex;
+    /*isso daqui concertou o bagui, manipular os a's e nao os li's*/
     font-size: 20px;
     padding: 5px 20px;
     align-items: center;/* isso daq ajeita os links no meio do nav*/
@@ -108,9 +113,67 @@ header{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.carousel-item{
+.carousel-item {
     height: 400px;
 }
+
+.card {
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.card-img {
+    width: 100%;
+    height: 33vh;
+    background-image: url("https://cea.vteximg.com.br/arquivos/ids/7331775-468-560/Camiseta-Masculina-Carnaval-Power-Ranger-Preta-8525474-Preto_4.jpg?v=636842997651600000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img:hover {
+    background-image: url("https://img.elo7.com.br/product/original/16C62A1/4-camiseta-power-ranger-power-ranger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.card a {
+    background-color: #60D0C0;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card a:hover {
+    background: #50C0B0;
+}
+
+.card h5 {
+    color: #140f0a;
+    font-weight: 800;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: 900;
+    color: #45e06d;
+}
+
+.grid {
+    max-width: 980px;
+    width: 80%;
+    margin-top: 52px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-column-gap: 25px;
+    margin: auto;
+}
+
+
 /*body::after {
 
     content: "";
