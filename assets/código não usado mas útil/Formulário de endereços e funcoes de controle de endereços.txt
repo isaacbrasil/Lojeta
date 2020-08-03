@@ -1,0 +1,192 @@
+<!-- <h3>Endereço</h3>
+<div class="form-group">
+    <div class="form-row">
+        <div class="col">
+            <label>Rua</label>
+            <input type="text" class="form-control form-sign-required" id="inputStreet" maxlength="100" required>
+            <div class="alertContainer alertMsgContainer-0" id="streetAlert0">
+                <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
+            </div>
+        </div>
+        <div class="col">
+            <label>Setor</label>
+            <input type="text" class="form-control form-sign-required" id="inputDistrict" maxlength="100" required>
+            <div class="alertContainer alertMsgContainer-0" id="districtAlert0">
+                <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <div class="form-row">
+        <div class="col">
+            <label>Numero</label>
+            <input type="tel" class="form-control form-sign-required" id="inputNumber" maxlength="20" required>
+            <div class="alertContainer alertMsgContainer-0" id="nbrAlert0">
+                <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
+            </div>
+        </div>
+        <div class="col">
+            <label>Quadra</label>
+            <input type="number" class="form-control" id="inputQd" placeholder="(opcional)">
+        </div>
+        <div class="col">
+            <label>Lote</label>
+            <input type="number" class="form-control" id="inputLt" placeholder="(opcional)">
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <label>Complemento</label>
+    <input type="text" class="form-control" id="inputComplement" placeholder="(opcional)">
+</div>
+
+<div class="form-group">
+    <div class="form-row">
+        <div class="col">
+            <label>Estado</label>
+            <select id="inputState" class="form-control form-sign-required" required>
+                <option value="null" selected>Selecione um Estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <div class="alertContainer alertMsgContainer-0" id="stateAlert0">
+                <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
+            </div>
+        </div>
+        <div class="col">
+            <label>Cidade</label>
+            <select id="inputCity" class="form-control form-sign-required" disabled required>
+                <option selected>Selecione um Estado</option>
+            </select>
+            <div class="alertContainer alertMsgContainer-0" id="cityAlert0">
+                <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
+            </div>
+        </div>
+        <div class="col">
+            <label>CEP</label>
+            <input type="tel" class="form-control form-sign-required" id="InputCEP" placeholder="Ex.:00000-000" maxlength="9" required>
+            <div class="alertContainer alertMsgContainer-0" id="cepAlert0">
+                <small class="alertMsg alertMsg-0">Este campo é obrigatório</small>
+            </div>
+            <div class="alertContainer alertMsgContainer-1" id="cepAlert1">
+                <small class="alertMsg alertMsg-1">CEP inválido</small>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+//Carrega as cidades de acordo com o estado 
+// function setCitiesSelect() {
+//     let input = $("#inputCity");
+//     if ($("#inputState").val() != "null") {
+//         axios.get('https://servicodados.ibge.gov.br/api/v1/localidades/estados/' + $("#inputState").val() + '/municipios')
+//             .then(function (response) {
+//                 // handle success
+//                 input.empty();
+//                 input.append("<option value='null' selected>Selecione a Cidade</option>");
+//                 for (let i = 0; i < response.data.length; i++) {
+//                     input.append("<option>" + response.data[i].nome + "</option>");
+//                 }
+//             })
+//             .catch(function (error) {
+//                 alert("Algo deu errado no IBGE! Chamem os bombeiros!!")
+//                 console.log(error);
+//             })
+//             .then(function () {
+//                 input.removeAttr("disabled");
+//             });
+//     } else {
+//         input.empty();
+//         input.append("<option value='null' selected>Selecione um Estado</option>");
+//         updateBtnKey(10, false);
+//         input.attr("disabled", "true");
+//     }
+// }
+
+
+// tratamento de input do telefone
+// inputElement[4].addEventListener("input", ()=>{ 
+//     let phone = document.querySelector("#inputPhone").value.replace(/[/ ()]/g,'');
+//     let iphone = $("#inputPhone");
+//     let alert1 = $("#phoneAlert1");
+//     if (/^(\d{2,2})(\d{4,5})(\d{4,4})$/.test(phone) || phone.length == 0){
+//         animateAlert(alert1, "hide");
+//         updateBtnKey1(2,true);
+//         updateBtn();
+//     }
+//     iphone.val(phone.replace(/^(\d{2,2})(\d{1,5})(\d{4,4})$/,'($1) $2 $3'));
+// });
+// inputElement[4].addEventListener("blur", ()=>{
+//     let phone = document.querySelector("#inputPhone").value.replace(/[/ ()]/g,'');
+//     let alert1 = $("#phoneAlert1");
+//     if (/^(\d{2,2})(\d{4,5})(\d{4,4})$/.test(phone) || phone.length == 0) {
+//         animateAlert(alert1, "hide");
+//         updateBtnKey1(2,true);
+//         updateBtn();
+//     }else{
+//         animateAlert(alert1, "pop");
+//         updateBtnKey1(2,false);
+//         updateBtn();
+//     }
+// });
+
+
+// Carregando as cidades de acordo com o estado
+// inputElement[9].addEventListener("change", ()=>{
+//     setCitiesSelect();
+// });
+//tratamento do CEP
+// inputElement[11].addEventListener("input", ()=>{ 
+//     let cep = document.querySelector("#InputCEP").value.replace(/[/ /-]/g,'');
+//     let icep = $("#InputCEP");
+//     let alert1 = $("#cepAlert1");
+//     if (/^(\d{5,5})(\d{3,3})$/.test(cep) || cep.length == 0){
+//         animateAlert(alert1, "hide");
+//         updateBtnKey1(4,true);
+//         updateBtn();
+//     }
+//     icep.val(cep.replace(/^(\d{1,5})(\d{3,3})$/,'$1-$2'));
+// });
+// inputElement[11].addEventListener("blur", ()=>{
+//     let cep = document.querySelector("#InputCEP").value.replace(/[/ /-]/g,'');
+//     let alert1 = $("#cepAlert1");
+//     if (/^(\d{5,5})(\d{3,3})$/.test(cep) || cep.length == 0){
+//         animateAlert(alert1, "hide");
+//         updateBtnKey1(4,true);
+//         updateBtn();
+//     }else{
+//         animateAlert(alert1, "pop");
+//         updateBtnKey1(4,false);
+//         updateBtn();
+//     }
+// });
+

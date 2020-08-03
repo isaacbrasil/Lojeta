@@ -76,14 +76,14 @@ header{
 
 .content-login{
     position: relative;
-    top: 20vh;
+    top: 50px;
     opacity: 100%;
     z-index: 1;
 }
 
 .content-signup{
     position: relative;
-    top: -183px;
+    top: -224px;
     opacity: 0%;
     z-index: -1;
 }
