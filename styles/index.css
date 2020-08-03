@@ -80,6 +80,7 @@ header {
     padding: 0px;
 }
 
+
 .topnav ul {
     margin: auto;
     list-style: none;
@@ -107,8 +108,7 @@ header {
     /*isso daqui concertou o bagui, manipular os a's e nao os li's*/
     font-size: 20px;
     padding: 5px 20px;
-    align-items: center;
-    /* isso daq ajeita os links no meio do nav*/
+    align-items: center;/* isso daq ajeita os links no meio do nav*/
     color: #473624;
     font-family: 'Ubuntu', sans-serif;
 }
