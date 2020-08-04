@@ -9,6 +9,7 @@
         <script src="jquery/jquery-3.5.1.min.js"></script>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/login.css">
         <link rel="stylesheet" href="styles/responsive.css">
 
@@ -20,23 +21,33 @@
     <body>
 
         <header>
-            <div class="header-container">  
+            <div class="header-container">
                 <h1>Olá, seja Bem-Vindo!</h1>
                 <div id="search-box">
                     <input type="name" id="searchfield" placeholder="O que você procura hoje?">
                     <a href="#" id="search-button"></a>
+
+                    <a href="login.html" class="myBttn  myBttn1">Login</a>
+
                 </div>
-                <button>
-                    <a href="#login.html">Entrar</a>
-                </button>
+
             </div>
         </header>
         <nav class="navbar sticky-top topnav">
             <ul>
-                <li class="nav-item"><a class="nav-link" href="camisetas.html">Camisetas</a></li>
-                <li class="nav-item"><a class="nav-link" href="blusao.html">Blusão</a></li>
-                <li class="nav-item"><a class="nav-link" href="canecas.html">Canecas</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html">Sobre</a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link myBttn myBttn1" href="#home">Camisetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link myBttn myBttn1" href="#blusao">Blusão</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link myBttn myBttn1" href="#canecas">Canecas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link myBttn myBttn1" href="index.html">Sobre</a>
+                </li>
             </ul>
         </nav>
         
@@ -46,15 +57,15 @@
                     <h3>Login</h3>
                     <div class="form-group">
                         <label>E-mail</label>
-                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
                         <small id="emailHelp" class="form-text text-muted">Nós não iremos vender seus dados pra china!.</small>
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" class="form-control" id="InputPassword1">
+                        <input type="password" class="form-control" id="inputPassword">
                     </div>
-                    <button id="loginSubmit" type="submit" class="btn btn-primary">Entrar</button>
-                    <button id="signUpFor" type="button" class="btn btn-secondary">Cadastrar</button>
+                    <button id="loginSubmit" type="button" class="myBttn myBttn1">Entrar</button>
+                    <button id="signUpFor" type="button" class="myBttn myBttn2">Cadastrar</button>
                 </form>
             </div>
         </div>
@@ -110,8 +121,8 @@
 
                     
 
-                    <button id="signUpSubmit" type="button" class="btn btn-primary" disabled>Cadastrar</button>
-                    <button id="signUpBack" type="button" class="btn btn-secondary">Voltar</button>
+                    <button id="signUpSubmit" type="button" class="myBttn myBttn1" disabled>Cadastrar</button>
+                    <button id="signUpBack" type="button" class="myBttn myBttn2">Voltar</button>
                 </form>
             </div>
         </div>
@@ -123,6 +134,30 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCAVmQRRu2F7Jzg4wbkVmml8Z4NCSKKSHo",
+                authDomain: "lojeta-d9905.firebaseapp.com",
+                databaseURL: "https://lojeta-d9905.firebaseio.com",
+                projectId: "lojeta-d9905",
+                storageBucket: "lojeta-d9905.appspot.com",
+                messagingSenderId: "38366727385",
+                appId: "1:38366727385:web:6d351b4be3760be74d82c8",
+                measurementId: "G-WNSCTWRMPH"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
         
         <script src="jquery/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="javascript/animations.js"></script>
