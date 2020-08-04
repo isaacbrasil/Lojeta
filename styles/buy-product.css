@@ -5,17 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.info-product h3 {
-    color: #140f0a;
-}
+.carousel-inner{
 
-.img-product {
-    width: 50%;
-    height: 33vh;
-    background-image: url("https://cea.vteximg.com.br/arquivos/ids/7331775-468-560/Camiseta-Masculina-Carnaval-Power-Ranger-Preta-8525474-Preto_4.jpg?v=636842997651600000");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 580px;
+    width: 468px;
+    
 }
 
 .box-product {
@@ -23,4 +17,18 @@
     margin: auto;
     width: 50%;
     margin: auto;
+}
+
+.info-product h3 {
+
+    margin: auto;
+    color:  #140f0a;
+    font-weight: 600;
+    font-size: 32px;
+
+}
+.info-product h5 {
+
+    color:  #140f0a;
+
 }

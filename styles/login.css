@@ -1,29 +1,29 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-color: #EEEEEE;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+header {
     padding: 10px 20px;
     background-color: #140f0a;
 }
 
-.header-container{ 
+.header-container {
     margin: auto;
     width: 40%;
 }
 
-.header-container h1{
+.header-container h1 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     justify-content: center;
@@ -31,7 +31,7 @@ header{
     color: #76EAD7;
 }
 
-#searchfield{
+#searchfield {
     padding-left: 20px;
     color: #757575;
     font-family: 'Ubuntu', sans-serif;
@@ -41,10 +41,10 @@ header{
     background-color: #EEEEEE;
     border: none;
     outline: none;
-    position: relative; 
+    position: relative;
 }
 
-#search-button{
+#search-button {
     width: 10%;
     height: 40px;
     display: flex;
@@ -56,79 +56,105 @@ header{
     float: right;
 }
 
-#search-box{
+#search-box {
     margin-top: 10px;
+    display: flex;
 }
 
-#search-button:hover{
+#search-button:hover {
     background-color: #A3A3A3;
 }
 
-#searchfield::placeholder{
+#searchfield::placeholder {
     font-style: italic;
     font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
 }
 
-.login-container{
+.login-container {
     max-width: 400px;
 }
 
-.content-login{
+.content-login {
     position: relative;
     top: 50px;
     opacity: 100%;
     z-index: 1;
 }
 
-.content-signup{
+.content-signup {
     position: relative;
     top: -224px;
     opacity: 0%;
     z-index: -1;
 }
 
-.topnav{
+.topnav {
     background-color: #76EAD7;
     padding: 0px;
 }
 
-.topnav ul{
+.topnav ul {
     margin: auto;
     list-style: none;
     text-align: center;
 }
 
-.topnav li{
+.topnav li {
     display: inline-block;
-    transition: background 0.2s, border-radius 0.2s;/*coloquei uns frufru*/
+    transition: background 0.2s, border-radius 0.2s;
+    /*coloquei uns frufru*/
 }
 
-.topnav li:hover{
+.topnav li:hover {
     background: #60D0C0;
     border-radius: 4px;
 }
 
-.topnav li:active{
+.topnav li:active {
     background: #50C0B0;
     border-radius: 8px;
 }
 
-.topnav a{
-    display: flex;/*isso daqui concertou o bagui, manipular os a's e nao os li's*/
+.topnav a {
+    display: flex;
+    /*isso daqui concertou o bagui, manipular os a's e nao os li's*/
     font-size: 20px;
     padding: 5px 20px;
-    align-items: center;/* isso daq ajeita os links no meio do nav*/
+    align-items: center;
+    /* isso daq ajeita os links no meio do nav*/
     color: #473624;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.alertContainer{
+.alertContainer {
     height: 0px;
     overflow: hidden;
 }
 
-.alertMsg{
+.alertMsg {
     color: red;
     opacity: 70%;
+}
+
+.btn-login{
+    
+    width: 100px;
+    border-radius: 20px;
+    background-color: #60D0C0;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    margin-left: 8px;
+    color: #140f0a;
+    text-decoration: none;
+}
+.btn-login:hover{
+
+    text-decoration: none;
+    color: white;
+
 }
