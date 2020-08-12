@@ -1,0 +1,59 @@
+.carousel-item {
+    height: 400px;
+}
+
+.card {
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.card-img {
+    width: 100%;
+    height: 33vh;
+    background-image: url("https://cea.vteximg.com.br/arquivos/ids/7331775-468-560/Camiseta-Masculina-Carnaval-Power-Ranger-Preta-8525474-Preto_4.jpg?v=636842997651600000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img:hover {
+    background-image: url("https://img.elo7.com.br/product/original/16C62A1/4-camiseta-power-ranger-power-ranger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.card a {
+    background-color: #60D0C0;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card a:hover {
+    background: #50C0B0;
+}
+
+.card h5 {
+    color: #140f0a;
+    font-weight: 800;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: 900;
+    color: #45e06d;
+}
+
+.grid {
+    max-width: 980px;
+    width: 80%;
+    margin-top: 52px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-column-gap: 25px;
+    margin: auto;
+}

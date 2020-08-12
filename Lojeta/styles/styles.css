@@ -1,0 +1,169 @@
+/*General css*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+header {
+    padding: 10px 20px;
+    background-color: #140f0a;
+}
+
+.header-container {
+    margin: auto;
+    width: 40%;
+}
+
+.header-container h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #76EAD7;
+}
+
+#searchfield {
+    padding-left: 20px;
+    color: #757575;
+    font-family: 'Ubuntu', sans-serif;
+    height: 40px;
+    width: 90%;
+    border-radius: 30px 0 0 30px;
+    background-color: #EEEEEE;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+#search-button {
+    width: 10%;
+    height: 40px;
+    display: flex;
+    border-radius: 0px 30px 30px 0px;
+    background-image: url('../assets/search.svg');
+    background-repeat: no-repeat;
+    background-color: #CBCBCB;
+    background-position: center;
+    float: right;
+    margin-right: 10px;
+}
+
+#search-box {
+    margin-top: 10px;
+    display: flex;
+}
+
+#search-button:hover {
+    background-color: #A3A3A3;
+}
+
+#searchfield::placeholder {
+    font-style: italic;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+}
+
+.topnav {
+    background-color: #76EAD7;
+    padding: 0px;
+}
+
+.topnav ul {
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
+
+.topnav li {
+    display: inline-block;
+}
+
+.myBttn {
+    padding: 4px 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+}
+
+.myBttn:hover {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.myBttn:active {
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.myBttn:focus {
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.myBttn1 {
+    color: #140f0a;
+    background-color: #76EAD7;
+}
+
+.myBttn1:hover {
+    color: white;
+    background-color: #60D0C0;
+}
+
+.myBttn1:active {
+    color: #EEEEEE;
+    background-color: #60D0C0;
+}
+
+.myBttn2 {
+    color: white;
+    background-color: black;
+}
+
+.myBttn2:hover {
+    color: white;
+    background-color: #60D0C0;
+}
+
+.myBttn2:active {
+    color: #EEEEEE;
+    background-color: #60D0C0;
+}
+
+.myBttn3 {
+    margin-left: 12px;
+    color: #140f0a;
+    background-color: #76EAD7;
+}
+
+.myBttn3:hover {
+    color: white;
+    background-color: #60D0C0;
+}
+
+.myBttn3:active {
+    color: #EEEEEE;
+    background-color: #60D0C0;
+}
