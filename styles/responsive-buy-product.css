@@ -2,15 +2,17 @@
 
 @media (max-width: 1199.98px) {}
 
-/*
-Medium devices (tablets, less than 992px)*/
+/*Medium devices (tablets, less than 992px)*/
 
 @media (max-width: 991.98px) {
     .header-container {
         width: 60%;
     }
-    .grid {
-        grid-template-columns: 1fr 1fr;
+    .box-product{
+        flex-direction: column;
+    }
+    .info-product {
+        margin: 0;
     }
 }
 

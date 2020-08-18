@@ -25,7 +25,7 @@
 }
 
 .card a {
-    background-color: #60D0C0;
+    background-color: var(--color-aquamarine);
     border: none;
     border-radius: 18px;
     display: flex;
@@ -34,18 +34,18 @@
 }
 
 .card a:hover {
-    background: #50C0B0;
+    background: var(--color-aquamarine-darker);
 }
 
 .card h5 {
-    color: #140f0a;
+    color: var(--color-dark);
     font-weight: 800;
 }
 
 .card p {
     font-size: 32px;
     font-weight: 900;
-    color: #45e06d;
+    color: var( --color-aquamarine);
 }
 
 .grid {
