@@ -20,18 +20,19 @@
 
 .info-product {
     margin: 32px 0 0 32px;
+
 }
 
 .info-product h3 {
     margin: auto;
-    color: #140f0a;
+    color: var(--color-dark);
     font-weight: 700;
     font-size: 32px;
 }
 
 .info-product > strong {
     display: flex;
-    color: #3ab5a1;
+    color: var(--color-aquamarine-darker);
     font-size: 25px;
     margin-top: 50px;
 }
@@ -43,7 +44,7 @@
 }
 
 .box-container .radio {
-    border: solid 1.4px #757575;
+    border: solid 1.4px var(--color-gray);
     margin-right: 5px;
     height: 30px;
     width: 30px;
@@ -51,11 +52,11 @@
 }
 
 #black {
-    background: #140f0a;
+    background: var(--color-dark);
 }
 
 #white {
-    background: #E9E9E9;
+    background:  white;
 }
 
 .box-container .radio:hover {
@@ -65,16 +66,34 @@
 }
 
 .btn.btn-secondary.active {
-    background-color: #140f0a;
+    background-color: var(--color-dark);
 }
 
 .btn.btn-secondary {
-    background: #3ab5a1;
-}
-.color-buttons label{
-    
+    background: var(--color-aquamarine-darker);
 }
 .tamanho{
     display: flex;
     flex-direction: column;
+}
+#buy-btn{
+
+    margin-top: 20px;
+    height: 40px;
+    color: var(--color-dark);
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+    background-color: var(--color-aquamarine);
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+#buy-btn:hover {
+    background: var(--color-aquamarine-darker);
+    color: white;
 }

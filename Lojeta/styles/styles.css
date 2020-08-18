@@ -1,5 +1,16 @@
 /*General css*/
 
+:root {
+    --color-background: #EEEEEE;
+    --color-dark: #140f0a;
+    --color-aquamarine: #76EAD7;
+    --color-spacial-green: #C4FB6D;
+    --color-gray: #757575;
+    --color-gray-lighter: #CBCBCB;
+    --color-aquamarine-darker: #3ab5a1;
+    --color-almost-white: #E9E9E9;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,12 +19,12 @@
 }
 
 body {
-    background-color: #EEEEEE;
+    background-color: var(--color-background);
 }
 
 header {
     padding: 10px 20px;
-    background-color: #140f0a;
+    background-color: var(--color-dark);
 }
 
 .header-container {
@@ -26,17 +37,17 @@ header {
     text-align: center;
     justify-content: center;
     white-space: nowrap;
-    color: #76EAD7;
+    color: var(--color-aquamarine);
 }
 
 #searchfield {
     padding-left: 20px;
-    color: #757575;
+    color: var(--color-gray);
     font-family: 'Ubuntu', sans-serif;
     height: 40px;
     width: 90%;
     border-radius: 30px 0 0 30px;
-    background-color: #EEEEEE;
+    background-color: var(--color-background);
     border: none;
     outline: none;
     position: relative;
@@ -49,7 +60,7 @@ header {
     border-radius: 0px 30px 30px 0px;
     background-image: url('../assets/search.svg');
     background-repeat: no-repeat;
-    background-color: #CBCBCB;
+    background-color: var( --color-gray-lighter);
     background-position: center;
     float: right;
     margin-right: 10px;
@@ -61,7 +72,7 @@ header {
 }
 
 #search-button:hover {
-    background-color: #A3A3A3;
+    background-color: var(--color-gray);
 }
 
 #searchfield::placeholder {
@@ -71,7 +82,7 @@ header {
 }
 
 .topnav {
-    background-color: #76EAD7;
+    background-color: var(--color-aquamarine);
     padding: 0px;
 }
 
@@ -123,47 +134,47 @@ header {
 }
 
 .myBttn1 {
-    color: #140f0a;
-    background-color: #76EAD7;
+    color: var(--color-dark);
+    background-color: var(--color-aquamarine);
 }
 
 .myBttn1:hover {
     color: white;
-    background-color: #60D0C0;
+    background-color: var(--color-aquamarine-darker);
 }
 
 .myBttn1:active {
-    color: #EEEEEE;
-    background-color: #60D0C0;
+    color:  var(--color-background);
+    background-color: var(--color-aquamarine-darker);
 }
 
 .myBttn2 {
     color: white;
-    background-color: black;
+    background-color: var(--color-dark);
 }
 
 .myBttn2:hover {
     color: white;
-    background-color: #60D0C0;
+    background-color: black;
 }
 
 .myBttn2:active {
-    color: #EEEEEE;
-    background-color: #60D0C0;
+    color: var(--color-background);
+    background-color:  var(--color-aquamarine-darker);
 }
 
 .myBttn3 {
     margin-left: 12px;
-    color: #140f0a;
-    background-color: #76EAD7;
+    color: var(--color-dark);
+    background-color: var(--color-aquamarine);
 }
 
 .myBttn3:hover {
     color: white;
-    background-color: #60D0C0;
+    background-color: var(--color-aquamarine-darker);
 }
 
 .myBttn3:active {
-    color: #EEEEEE;
-    background-color: #60D0C0;
+    color: var(--color-background);
+    background-color: var(--color-aquamarine-darker);;
 }
