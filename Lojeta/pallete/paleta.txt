@@ -1,6 +1,0 @@
-#EEEEEE branco
-#140f0a dark
-#76EAD7 verde agua
-#C4FB6D verde espacial
-#757575 cinza
-#45e06d VERDE-COMPRAS

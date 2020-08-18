@@ -1,77 +1,102 @@
 /*General css*/
-*{
+
+:root {
+    --color-background: #EEEEEE;
+    --color-dark: #140f0a;
+    --color-aquamarine: #76EAD7;
+    --color-spacial-green: #C4FB6D;
+    --color-gray: #757575;
+    --color-gray-lighter: #CBCBCB;
+    --color-aquamarine-darker: #3ab5a1;
+    --color-almost-white: #E9E9E9;
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
-    background-color: #EEEEEE;
+
+body {
+    background-color: var(--color-background);
 }
-header{
+
+header {
     padding: 10px 20px;
-    background-color: #140f0a;
+    background-color: var(--color-dark);
 }
-.header-container{ 
+
+.header-container {
     margin: auto;
     width: 40%;
 }
-.header-container h1{
+
+.header-container h1 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     justify-content: center;
     white-space: nowrap;
-    color: #76EAD7;
+    color: var(--color-aquamarine);
 }
-#searchfield{
+
+#searchfield {
     padding-left: 20px;
-    color: #757575;
+    color: var(--color-gray);
     font-family: 'Ubuntu', sans-serif;
     height: 40px;
     width: 90%;
     border-radius: 30px 0 0 30px;
-    background-color: #EEEEEE;
+    background-color: var(--color-background);
     border: none;
     outline: none;
-    position: relative; 
+    position: relative;
 }
-#search-button{
+
+#search-button {
     width: 10%;
     height: 40px;
     display: flex;
     border-radius: 0px 30px 30px 0px;
     background-image: url('../assets/search.svg');
     background-repeat: no-repeat;
-    background-color: #CBCBCB;
+    background-color: var( --color-gray-lighter);
     background-position: center;
     float: right;
     margin-right: 10px;
 }
-#search-box{
+
+#search-box {
     margin-top: 10px;
     display: flex;
 }
-#search-button:hover{
-    background-color: #A3A3A3;
+
+#search-button:hover {
+    background-color: var(--color-gray);
 }
-#searchfield::placeholder{
+
+#searchfield::placeholder {
     font-style: italic;
     font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
 }
-.topnav{
-    background-color: #76EAD7;
+
+.topnav {
+    background-color: var(--color-aquamarine);
     padding: 0px;
 }
-.topnav ul{
+
+.topnav ul {
     margin: auto;
     list-style: none;
     text-align: center;
 }
-.topnav li{
+
+.topnav li {
     display: inline-block;
 }
-.myBttn{
+
+.myBttn {
     padding: 4px 10px;
     font-size: 20px;
     border-radius: 4px;
@@ -84,20 +109,15 @@ header{
     text-decoration: none;
     transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
 }
-.myBttn:hover{
+
+.myBttn:hover {
     text-decoration: none;
     border: none;
     outline: none;
     cursor: pointer;
 }
-.myBttn:active{
-    text-decoration: none;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.myBttn:focus{
+
+.myBttn:active {
     text-decoration: none;
     border-radius: 8px;
     border: none;
@@ -105,28 +125,56 @@ header{
     cursor: pointer;
 }
 
-.myBttn1{
-    color: #140f0a;
-    background-color: #76EAD7;
+.myBttn:focus {
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-.myBttn1:hover{
+
+.myBttn1 {
+    color: var(--color-dark);
+    background-color: var(--color-aquamarine);
+}
+
+.myBttn1:hover {
     color: white;
-    background-color: #60D0C0;
-}
-.myBttn1:active{
-    color: #EEEEEE;
-    background-color: #60D0C0;
+    background-color: var(--color-aquamarine-darker);
 }
 
-.myBttn2{
+.myBttn1:active {
+    color:  var(--color-background);
+    background-color: var(--color-aquamarine-darker);
+}
+
+.myBttn2 {
+    color: white;
+    background-color: var(--color-dark);
+}
+
+.myBttn2:hover {
     color: white;
     background-color: black;
 }
-.myBttn2:hover{
-    color: white;
-    background-color: #60D0C0;
+
+.myBttn2:active {
+    color: var(--color-background);
+    background-color:  var(--color-aquamarine-darker);
 }
-.myBttn2:active{
-    color: #EEEEEE;
-    background-color: #60D0C0;
+
+.myBttn3 {
+    margin-left: 12px;
+    color: var(--color-dark);
+    background-color: var(--color-aquamarine);
+}
+
+.myBttn3:hover {
+    color: white;
+    background-color: var(--color-aquamarine-darker);
+}
+
+.myBttn3:active {
+    color: var(--color-background);
+    background-color: var(--color-aquamarine-darker);;
 }
