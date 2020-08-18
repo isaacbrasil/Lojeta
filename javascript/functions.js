@@ -186,9 +186,36 @@ inputElement[3].addEventListener("blur", ()=>{
 
 //Controlando os dados recebidos pelo usuário
 //-------------------------------------------
+document.querySelector("#loginSubmit").addEventListener("click", () => {
+    email = document.querySelector("#inputEmail").value;
+    password = document.querySelector("#inputPassword").value;
+    console.log(firebase);
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+    });
+    console.log(User);
+});
 document.querySelector("#signUpSubmit").addEventListener("click", () => {
     User = new User(inputElement[0].value,
-        inputElement[1].value,
+        inputElement[1].value
     );
+    console.log(firebase);
+    firebase.auth().createUserWithEmailAndPassword(User.email, inputElement[2].value).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+    });
     console.log(User);
+});
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        alert("usuário conectado");
+        
+    } else {
+        alert("usuário desconectado");
+    }
 });
