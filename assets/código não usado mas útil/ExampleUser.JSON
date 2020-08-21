@@ -1,0 +1,30 @@
+//um usuario padrao no banco de dados
+{
+	"users" : {
+		"Fulano" : {
+			"email" : "example@example.com",
+			"deliveryAdress" : {
+				"street" : "rua 15",
+				"district" : "bairro das laranjeiras",
+				"strNumber" : "123",
+				"qd" : "01",
+				"lt" : "23",
+				"complement" : "perto da fulaninha",
+				"state" : "GO",
+				"city" : "Goiania",
+				"CEP" : "12345678"
+			},
+			"billingAdress" : {
+				"street" : "rua 15",
+				"district" : "bairro das laranjeiras",
+				"strNumber" : "123",
+				"qd" : "01",
+				"lt" : "23",
+				"complement" : "perto da fulaninha",
+				"state" : "GO",
+				"city" : "Goiania",
+				"CEP" : "12345678"
+			}
+		}
+	}
+}
