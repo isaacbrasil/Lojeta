@@ -28,11 +28,9 @@
                 <input type="name" id="searchfield" placeholder="O que você procura hoje?">
                 <a href="#" id="search-button"></a>
 
-                <a href="login.html" class="myBttn myBttn1">Login</a>
+                <a id="login-btn" href="../login" class="myBttn myBttn1 off">Login</a>
+                <a id="user-btn" href="../account" class="myBttn myBttn1 off">user</a>
                 <a href="#" class="myBttn myBttn3">Carrinho</a>
-
-
-
 
             </div>
 
@@ -145,6 +143,33 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCAVmQRRu2F7Jzg4wbkVmml8Z4NCSKKSHo",
+            authDomain: "lojeta-d9905.firebaseapp.com",
+            databaseURL: "https://lojeta-d9905.firebaseio.com",
+            projectId: "lojeta-d9905",
+            storageBucket: "lojeta-d9905.appspot.com",
+            messagingSenderId: "38366727385",
+            appId: "1:38366727385:web:6d351b4be3760be74d82c8",
+            measurementId: "G-WNSCTWRMPH"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+    <script type="text/javascript" src="../javascript/app.js"></script>
 
 </body>
 
