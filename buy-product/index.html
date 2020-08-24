@@ -5,19 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lojeta</title>
-
-    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <title>Lojeta - Comprar</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/buy-product.css">
-    <link rel="stylesheet" href="styles/responsive-buy-product.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/responsive.css">
 
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/sun.png" type="image/png">
+    <link rel="shortcut icon" href="../assets/sun.png" type="image/png">
 
 </head>
 
@@ -30,11 +28,9 @@
                 <input type="name" id="searchfield" placeholder="O que você procura hoje?">
                 <a href="#" id="search-button"></a>
 
-                <a href="login.html" class="myBttn myBttn1">Login</a>
+                <a id="login-btn" href="../login" class="myBttn myBttn1 off">Login</a>
+                <a id="user-btn" href="../account" class="myBttn myBttn1 off">user</a>
                 <a href="#" class="myBttn myBttn3">Carrinho</a>
-
-
-
 
             </div>
 
@@ -53,7 +49,7 @@
                 <a class="nav-link myBttn myBttn1" href="#canecas">Canecas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link myBttn myBttn1" href="index.html">Sobre</a>
+                <a class="nav-link myBttn myBttn1" href="../">Sobre</a>
             </li>
         </ul>
     </nav>
@@ -139,18 +135,41 @@
 
     </div>
 
-    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script src="../jquery/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="javascript/app.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCAVmQRRu2F7Jzg4wbkVmml8Z4NCSKKSHo",
+            authDomain: "lojeta-d9905.firebaseapp.com",
+            databaseURL: "https://lojeta-d9905.firebaseio.com",
+            projectId: "lojeta-d9905",
+            storageBucket: "lojeta-d9905.appspot.com",
+            messagingSenderId: "38366727385",
+            appId: "1:38366727385:web:6d351b4be3760be74d82c8",
+            measurementId: "G-WNSCTWRMPH"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+    <script type="text/javascript" src="../javascript/app.js"></script>
 
 </body>
 

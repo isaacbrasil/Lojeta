@@ -1,5 +1,7 @@
-//Funcões utilitárias
-//-------------------
+
+var database = firebase.database();
+var auth = firebase.auth();
+
 
 //limpa todas as Mensagens
 function clearMsgs() {
@@ -59,7 +61,38 @@ function userInput(inputElement, alertElement, i) {
     return;
 }
 
-// function loadUserMenu(){
-//        $("login-btn").addClass("off");
-//        $("user-btn").removeClass("off");
-// }
+function login(email, password) {
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+    });
+    console.log(User);
+}
+function signUp(User, password){
+    auth.createUserWithEmailAndPassword(User.email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+    }).then( () => {
+        auth.currentUser.updateProfile({
+            displayName: User.name
+        }).then(function() {
+            console.log("Profile updated successfully!");
+        }, function(error) {
+            // An error happened.
+        });
+        database.ref('users/' + auth.currentUser.uid).set({
+            username: User.name,
+            email: User.email,
+            "deliveryAdress" : {},
+            "billingAdress" : {}
+        }).then(function() {
+            console.log("Database updated successfully!");
+        }, function(error) {
+            // An error happened.
+        });;
+    });
+}
