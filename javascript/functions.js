@@ -96,3 +96,25 @@ function signUp(User, password){
         });;
     });
 }
+function loadOrders () {
+    var userId = auth.currentUser.uid;
+    console.log(userId);
+    database.ref('users/' + userId + '/orders').once('value', function(snapshot) {
+      snapshot.forEach(function(childSnapshot) {
+        var childData = childSnapshot.val();
+        console.log(childData);
+        document.querySelector("#orders").insertAdjacentHTML('afterend', `<p>${childData.product}</p>`);
+      });
+    });
+    // document.querySelector(".orders").insertAdjacentHTML('afterend', `<p>${}</p>`);
+}
+function loadUserData () {
+    var userId = auth.currentUser.uid;
+    console.log(userId);
+    database.ref('users/' + userId).once('value', function(snapshot) {
+      document.querySelector("#userData").insertAdjacentHTML('afterend', `
+        <p>${snapshot.val().username}</p>
+        <p>${snapshot.val().email}</p>
+        `);
+    });
+}

@@ -23,10 +23,16 @@ body {
 }
 
 header {
+    width: 100%;
     padding: 10px 20px;
     background-color: var(--color-dark);
 }
-
+.content{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
 .header-container {
     margin: auto;
     width: 40%;

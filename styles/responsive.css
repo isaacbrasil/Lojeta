@@ -29,7 +29,10 @@ Medium devices (tablets, less than 992px)*/
 /*Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 575.98px) {
-    .header-container {
+    .header {
+        width: 100%;
+    }
+    .content{
         width: 100%;
     }
 }
